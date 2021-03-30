@@ -26,20 +26,27 @@
 
         <style>
             body {
-                padding:20px;
+                padding: 20px;
                 background-color: #dddddd;
             }
 
             .overall {
-                margin:auto;
-                width:75%;
+                margin: auto;
+                width: 75%;
+            }
+
+            .info-border {
+                border-top-style: solid;
+                border-bottom-style: solid;
+                border-color: #aaaaaa;
+                border-width: 1px 1px 1px 1px;
             }
         </style>
     </head>
     <body>
         <div class="container_fluid">
             <div class="row overall">
-                <div class="col-sm-3 bg-aqua">
+                <div class="col-sm-3 bg-black silver">
                     <p class="row">
                         <div>
                             <img src="media/profile_picture.jpg" class="rounded-circle img-thumbnail">
@@ -48,31 +55,31 @@
                             Illio Suardi
                         </h3>
                     </p>
-                    <p class="row border border--silver">
-                        <div class="text-center">Contact me at...</div>
+                    <div class="row">
+                        <div class="text-center gray fs-5">Contact me at...</div>
                         <div>
                             <i class="bi bi-github"></i>
-                            <a href="https://github.com/fyshhh/" target="_blank"> fyshhh</a>
+                            <a href="https://github.com/fyshhh/" target="_blank" class="aqua"> fyshhh</a>
                         </div>
                         <div>
                             <i class="bi bi-telegram"></i>
-                            <a href="https://t.me/ravillioli" target="_blank"> @ravillioli</a>
+                            <a href="https://t.me/ravillioli" target="_blank" class="aqua"> @ravillioli</a>
                         </div>
                         <div>
                             <i class="bi bi-mailbox2"></i>
-                            <a href="mailto:illio@u.nus.edu" target="_blank"> illio@u.nus.edu</a>
+                            <a href="mailto:illio@u.nus.edu" target="_blank" class="aqua"> illio@u.nus.edu</a>
                         </div>
                         <div>
                             <i class="bi bi-telephone-fill"></i>
-                            <a href="tel:+6592226898" target="_self"> +65 9222 6898</a>
+                            <a href="tel:+6592226898" target="_self" class="aqua"> +65 9222 6898</a>
                         </div>
                         <div>
                             <i class="bi bi-journal-text"></i>
-                            <a href="media/cv.pdf" target="_blank"> View my resume here!</a>
+                            <a href="media/cv.pdf" target="_blank" class="aqua"> View my resume here!</a>
                         </div>
-                    </p>
-                    <p>
-                        <div class="text-center">Education</div>
+                    </div>
+                    <p class="row">
+                        <div class="text-center gray fs-5">Education</div>
                         <div>
                             BComp in Computer Science
                             BSc in Mathematics
@@ -92,7 +99,7 @@
                         </div>
                     </p>
                     <div>
-                        <div class="text-center">Languages</div>
+                        <div class="text-center gray fs-5">Languages</div>
                         <div>
                             English <span class="fw-light">(fluent)</span>
                             <br>
@@ -101,15 +108,15 @@
                     </div>
                 </div>
                 <div class="col-sm-9 bg-white">
-                    <div class="row text-center border border-secondary">
+                    <div class="row text-center">
                         <h5 class="fw-lighter">Hi, I'm</h5>
                         <h1 class="display-1">Illio</h1>
                         <h6 class="fw-lighter fst-italic">(pronounced ee-lee-oh)</h6>
                     </div>
-                    <div id="abt" class="row border border-secondary">
-                        <div>
-                            More about me...
-                        </div>
+                    <p id="abt" class="row info-border">
+                        <h3>
+                            About Me
+                        </h3>
                         <div>
                             I am a Year 2 undergraduate at the National University of Singapore (NUS), currently
                             enrolled in the Double Degree Programme studying Computer Science and Mathematics.
@@ -119,14 +126,11 @@
                             free time, I enjoy anything from weird variants of sudoku to weird variants of chess. I
                             find activities to occupy myself with, and as such often find new hobbies and interests.
                         </div>
-                    </div>
-                    <div id="exp" class="row border border-secondary">
-                        <div>
-                            Work experiences
-                        </div>
-                        <div>
-                            <br/>
-                        </div>
+                    </p>
+                    <p id="exp" class="row info-border">
+                        <h3>
+                            Work Experiences
+                        </h3>
                         <div class="row">
                             <div class="col-9">
                                 Teaching Assistant for
@@ -188,12 +192,9 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div id="prj" class="row border border-secondary">
-                        <div>Projects</div>
-                        <div>
-                            <br/>
-                        </div>
+                    </p>
+                    <p id="prj" class="row info-border">
+                        <h3>Projects</h3>
                         <div>Here are some of the personal projects I have embarked on.</div>
                         <div>
                             <br/>
@@ -262,12 +263,9 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div id="prf" class="row border border-secondary">
-                        <div>Proficiencies</div>
-                        <div>
-                            <br/>
-                        </div>
+                    </p>
+                    <p id="prf" class="row info-border">
+                        <h3>Proficiencies</h3>
                         <div class="row">
                             <div class="col-8">
                                 Java
@@ -352,7 +350,7 @@
                                 <i class="bi bi-circle"></i>
                             </div>
                         </div>
-                    </div>
+                    </p>
                 </div>
             </div>
         </div>
